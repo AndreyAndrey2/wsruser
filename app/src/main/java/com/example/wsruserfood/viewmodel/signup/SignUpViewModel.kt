@@ -28,9 +28,9 @@ class SignUpViewModel : BaseViewModel() {
 
             _authRequest.value = Event.loading()
 
-//            postRequestWithMutableFlow(_authRequest) {
-//                api.postRegister(RegisterRequest(email, password, login))
-//            }
+            postRequestWithMutableFlow(_authRequest) {
+                api.postRegister(RegisterRequest(email, password, login))
+            }
         }
     }
 }

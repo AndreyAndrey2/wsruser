@@ -58,4 +58,41 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <FrameLayout
+        android:layout_width="224dp"
+        android:layout_marginTop="220dp"
+        android:layout_height="135dp"
+        android:background="@drawable/elipse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:rotation="150">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:rotation="180"
+            android:text="Welcome To"
+            android:layout_marginTop="16dp"
+            android:textSize="32dp"
+            android:fontFamily="@font/italiano"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:rotation="180"
+            android:text="WSR Food"
+            android:layout_marginBottom="16dp"
+            android:textSize="32dp"
+            android:fontFamily="@font/italiano"
+            android:textColor="#000"/>
+    </FrameLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
