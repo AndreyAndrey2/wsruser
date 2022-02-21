@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">wsruserFood</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fsr_food">WSR Food</string>
+</resources>
