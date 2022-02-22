@@ -12,6 +12,8 @@ import com.example.wsruserfood.ui.MainActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.collect
+import ru.example.wsrfood.extensions.gone
+import ru.example.wsrfood.extensions.visible
 import ru.example.wsrfood.viewmodel.core.BaseViewModel
 import ru.example.wsruserfood.viewmodel.core.Event
 
@@ -35,6 +37,7 @@ abstract class BaseFragment<T : BaseViewModel, VB : ViewBinding>
      * Переменная для указания видимости навигации. При значении false делает навигацию невидимой.
      */
     protected var isNavigationEnabled: Boolean = true
+
 
     override fun onCreateView(
         inflater: LayoutInflater,

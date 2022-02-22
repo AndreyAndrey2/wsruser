@@ -71,4 +71,5 @@ open class BaseViewModel : ViewModel() {
         dao = FoodDatabaseObject.getFoodDao()
     }
 
+
 }

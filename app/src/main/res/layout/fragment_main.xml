@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="18dp"
+            android:fontFamily="@font/roboto"
+            android:hint="Выберите адрес доставки"
+            android:layout_marginTop="36dp"
+            android:layout_marginStart="16dp"/>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/ic_send"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="84dp"/>
+
+    <ImageView
+        android:id="@+id/ic_search"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="17dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/eat_1"
+        android:layout_width="156dp"
+        android:layout_height="212dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/bg_white_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/eat_2"
+        android:layout_width="156dp"
+        android:layout_height="212dp"
+        android:background="@drawable/bg_white_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="30dp"/>
+
+    <ImageView
+        android:id="@+id/food_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/eat_1"
+        app:layout_constraintBottom_toBottomOf="@+id/eat_1"
+        app:layout_constraintEnd_toEndOf="@+id/eat_1"
+        app:layout_constraintStart_toStartOf="@+id/eat_1"
+        app:layout_constraintTop_toTopOf="@+id/eat_1" />
+
+    <ImageView
+        android:id="@+id/food_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/eat_2"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/eat_2"
+        app:layout_constraintEnd_toEndOf="@+id/eat_2"
+        app:layout_constraintStart_toStartOf="@+id/eat_2"
+        app:layout_constraintTop_toTopOf="@+id/eat_2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

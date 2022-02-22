@@ -11,6 +11,7 @@ import com.example.wsruserfood.databinding.FragmentSplashBinding
 import com.example.wsruserfood.ui.core.BaseFragment
 import com.example.wsruserfood.viewmodel.splash.SplashViewModel
 import ru.example.wsrfood.extensions.gone
+import ru.example.wsrfood.extensions.isOnline
 import ru.example.wsrfood.extensions.showToast
 import ru.example.wsruserfood.viewmodel.core.Status
 
@@ -26,22 +27,26 @@ class SplashFragment : BaseFragment<SplashViewModel, FragmentSplashBinding>() {
     ): FragmentSplashBinding =
         FragmentSplashBinding.inflate(inflater, container, false)
 
+    override fun onStart() {
+        super.onStart()
+    }
+
     override fun setupViews() {
 //        if (!requireContext().isOnline()) {
             binding.progressBar.gone()
             Handler(Looper.getMainLooper()).postDelayed({
                 findNavController().navigate(R.id.action_splashFragment_to_onBoardingFragmentContainer)
             }, 1000)
-//        }
+ //       }
 
-        //viewModel.setupDatabase(requireContext())
-        //viewModel.getVersion()
+ //       viewModel.setupDatabase(requireContext())
+ //       viewModel.getVersion()
 
-//        observeVersions()
-        //observeDishes()
+ //       observeVersions()
+//        observeDishes()
     }
 
-/*    private fun observeVersions() {
+    private fun observeVersions() {
         observeResponse(viewModel.version) {
             when (it.status) {
                 Status.SUCCESS -> {
@@ -58,9 +63,9 @@ class SplashFragment : BaseFragment<SplashViewModel, FragmentSplashBinding>() {
                 else -> {}
             }
         }
-    }*/
+    }
 
-/*    private fun observeDishes() {
+    private fun observeDishes() {
         observeResponse(viewModel.dishes) {
             when (it.status) {
                 Status.SUCCESS -> {
@@ -73,5 +78,5 @@ class SplashFragment : BaseFragment<SplashViewModel, FragmentSplashBinding>() {
                 else -> {}
             }
         }
-    }*/
+    }
 }

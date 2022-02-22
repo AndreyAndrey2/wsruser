@@ -21,6 +21,10 @@ class OnBoardingFragmentContainer :
     ): FragmentOnBoardindContainerBinding =
         FragmentOnBoardindContainerBinding.inflate(inflater, container, false)
 
+    override fun onStart() {
+        super.onStart()
+    }
+
     override fun setupViews() {
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
             requireActivity().finish()
