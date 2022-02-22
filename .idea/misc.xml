@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/andre/AndroidStudioProjects/wsruserFood/app/src/main/res/layout/fragment_on_boardind_container.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/andre/AndroidStudioProjects/wsruserFood/app/src/main/res/layout/fragment_onboarding_one.xml" value="0.16" />
+        <entry key="..\:/Users/andre/AndroidStudioProjects/wsruserFood/app/src/main/res/layout/fragment_onboarding_two.xml" value="0.2" />
         <entry key="app/src/main/res/drawable/bg_button_onboarding.xml" value="0.24166666666666667" />
         <entry key="app/src/main/res/drawable/bg_red_button.xml" value="0.4119791666666667" />
         <entry key="app/src/main/res/drawable/bg_sign_in.xml" value="0.4119791666666667" />

@@ -17,8 +17,8 @@
         android:id="@+id/indicator"
         android:layout_gravity="bottom|center_horizontal"
         app:spi_dotSize="10dp"
-        app:spi_dotSelectedColor="@color/color_indicator"
-        app:spi_dotColor="#fff"
-        android:layout_marginBottom="40dp"/>
+        app:spi_dotSelectedColor="@color/white"
+        app:spi_dotColor="@color/color_indicator"
+        android:layout_marginBottom="60dp"/>
 
 </FrameLayout>
