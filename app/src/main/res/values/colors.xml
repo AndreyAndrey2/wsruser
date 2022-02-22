@@ -9,4 +9,7 @@
     <color name="hint">#545454</color>
     <color name="transparent">@android:color/transparent</color>
     <color name="crayola">#4364F7</color>
+    <color name="fon">#F2F2F2</color>
+    <color name="tab_color">#9A9A9D</color>
+
 </resources>

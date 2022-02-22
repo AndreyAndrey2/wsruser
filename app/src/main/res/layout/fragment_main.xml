@@ -7,7 +7,15 @@
     tools:context=".ui.main.MainFragment">
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -15,14 +23,14 @@
             android:id="@+id/editTextTextPersonName"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="56dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text=""
-            android:textSize="18dp"
             android:fontFamily="@font/roboto"
             android:hint="Выберите адрес доставки"
-            android:layout_marginTop="56dp"
-            android:layout_marginStart="16dp"/>
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="18dp" />
 
     </FrameLayout>
 
@@ -47,27 +55,49 @@
         android:layout_marginEnd="17dp"/>
 
 
+    <FrameLayout
+        android:layout_width="329dp"
+        android:layout_height="180dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ic_send"
+        android:layout_marginTop="20dp"
+        android:background="@color/tab_color">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Реклама"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:textColor="#000000"/>
+    </FrameLayout>
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         style="@style/TabLayout"
         android:layout_width="wrap_content"
-        android:layout_height="24dp"
+        android:layout_height="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ic_send"
         app:tabGravity="center"
         app:tabIndicator="@drawable/bg_tab_item_selected"
         app:tabIndicatorAnimationMode="elastic"
-        app:tabIndicatorColor="@color/crayola"
+        app:tabIndicatorColor="@color/red"
         app:tabIndicatorGravity="stretch"
         app:tabMode="fixed"
         app:tabPaddingEnd="21dp"
         app:tabPaddingStart="21dp"
+        app:tabPaddingBottom="24dp"
+        android:layout_marginTop="220dp"
         app:tabRippleColor="@android:color/transparent"
-        app:tabSelectedTextColor="@color/white"
+        app:tabSelectedTextColor="@color/red"
         app:tabTextAppearance="@style/Text.TabLayout"
-        app:tabTextColor="@color/gray"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:tabTextColor="@color/tab_color"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:layout_marginBottom="8dp"/>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/pager"
@@ -80,46 +110,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tabLayout" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/eat_1"
-        android:layout_width="156dp"
-        android:layout_height="212dp"
-        android:layout_marginTop="176dp"
-        android:layout_marginStart="30dp"
-        android:background="@drawable/bg_white_button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/eat_2"
-        android:layout_width="156dp"
-        android:layout_height="212dp"
-        android:background="@drawable/bg_white_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="176dp"
-        android:layout_marginEnd="30dp"/>
-
-    <ImageView
-        android:id="@+id/food_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:src="@drawable/eat_1"
-        app:layout_constraintBottom_toBottomOf="@+id/eat_1"
-        app:layout_constraintEnd_toEndOf="@+id/eat_1"
-        app:layout_constraintStart_toStartOf="@+id/eat_1"
-        app:layout_constraintTop_toTopOf="@+id/eat_1" />
-
-    <ImageView
-        android:id="@+id/food_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/eat_2"
-        android:layout_marginBottom="100dp"
-        app:layout_constraintBottom_toBottomOf="@+id/eat_2"
-        app:layout_constraintEnd_toEndOf="@+id/eat_2"
-        app:layout_constraintStart_toStartOf="@+id/eat_2"
-        app:layout_constraintTop_toTopOf="@+id/eat_2" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

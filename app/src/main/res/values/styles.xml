@@ -53,6 +53,8 @@
 
     <style name="TabLayout" parent="Widget.Design.TabLayout">
         <item name="tabTextAppearance">@style/TabTextAppearance</item>
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textSize">18dp</item>
     </style>
 
     <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
