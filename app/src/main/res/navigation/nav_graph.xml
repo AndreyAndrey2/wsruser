@@ -65,7 +65,11 @@
         android:id="@+id/mainFragment"
         android:name="com.example.wsruserfood.ui.main.MainFragment"
         android:label="MainFragment"
-        tools:layout="@layout/fragment_main"/>
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_oneitemFragment"
+            app:destination="@id/oneitemFragment" />
+    </fragment>
     <fragment
         android:id="@+id/shopFragment"
         android:name="com.example.wsruserfood.ui.shop.ShopFragment"
@@ -81,4 +85,13 @@
         android:name="com.example.wsruserfood.ui.user.UserFragment"
         android:label="fragment_user"
         tools:layout="@layout/fragment_user" />
+    <fragment
+        android:id="@+id/oneitemFragment"
+        android:name="com.example.wsruserfood.ui.foods.OneitemFragment"
+        android:label="fragment_oneitem"
+        tools:layout="@layout/fragment_oneitem" >
+        <action
+            android:id="@+id/action_oneitemFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
 </navigation>
