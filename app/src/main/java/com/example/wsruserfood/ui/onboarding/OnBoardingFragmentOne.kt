@@ -1,11 +1,11 @@
-package ru.example.wsruserfood.ui.onnoarding
+package com.example.wsruserfood.ui.onboarding
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import com.example.wsruserfood.databinding.FragmentOnboardingOneBinding
 import com.example.wsruserfood.ui.core.BaseFragment
-import ru.example.wsrfood.viewmodel.core.EmptyViewModel
+import com.example.wsruserfood.viewmodel.core.EmptyViewModel
 
 
 class OnBoardingFragmentOne: BaseFragment<EmptyViewModel, FragmentOnboardingOneBinding>() {

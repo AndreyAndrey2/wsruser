@@ -17,5 +17,8 @@
         <item name="android:textAppearance">@style/Text</item>
         <item name="android:fontFamily">@font/nunito</item>
         <item name="android:textSize">15sp</item>
+
+
+
     </style>
 </resources>

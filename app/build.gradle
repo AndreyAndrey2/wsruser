@@ -12,7 +12,7 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "ru.example.wsrfood"
+        applicationId "com.example.wsruserfood"
         minSdk 23
         targetSdk 31
         versionCode 1

@@ -1,4 +1,4 @@
-package ru.example.wsrfood.ui.onnoarding.adapter
+package com.example.wsruserfood.ui.onboarding.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

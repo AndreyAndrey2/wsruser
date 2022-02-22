@@ -1,4 +1,4 @@
-package ru.example.wsrfood.ui.onnoarding
+package com.example.wsruserfood.ui.onboarding
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,10 +6,9 @@ import androidx.activity.addCallback
 import androidx.fragment.app.viewModels
 import com.example.wsruserfood.databinding.FragmentOnBoardindContainerBinding
 import com.example.wsruserfood.ui.core.BaseFragment
-
-import ru.example.wsrfood.ui.onnoarding.adapter.OnBoardingAdapter
-import ru.example.wsrfood.viewmodel.core.EmptyViewModel
-import ru.example.wsruserfood.ui.onnoarding.OnBoardingFragmentOne
+import com.example.wsruserfood.ui.onboarding.adapter.OnBoardingAdapter
+import com.example.wsruserfood.viewmodel.core.EmptyViewModel
+import com.example.wsruserfood.ui.onboarding.OnBoardingFragmentOne
 
 class OnBoardingFragmentContainer :
     BaseFragment<EmptyViewModel, FragmentOnBoardindContainerBinding>() {

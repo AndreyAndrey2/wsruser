@@ -1,6 +1,6 @@
-package ru.example.wsrfood.data.models.remote
+package com.example.wsruserfood.data.models.remote
 
-import ru.example.wsruserfood.data.db.entity.DishEntity
+import com.example.wsruserfood.data.db.entity.DishEntity
 
 data class DishResponse(
     val category: String,

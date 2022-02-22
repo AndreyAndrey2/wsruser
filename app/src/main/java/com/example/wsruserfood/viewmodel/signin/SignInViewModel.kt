@@ -1,19 +1,15 @@
-package ru.example.wsruserfood.viewmodel.signin
+package com.example.wsruserfood.viewmodel.signin
 
 import androidx.lifecycle.viewModelScope
+import com.example.wsruserfood.data.models.remote.TokenResponse
+import com.example.wsruserfood.viewmodel.core.BaseViewModel
+import com.example.wsruserfood.viewmodel.core.Event
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import ru.example.wsrfood.data.models.remote.AuthRequest
-import ru.example.wsrfood.data.models.remote.TokenResponse
-import ru.example.wsrfood.viewmodel.core.BaseViewModel
-//import ru.example.wsruserfood.data.models.remote.TokenResponse
-//import ru.example.wsruserfood.viewmodel.core.BaseViewModel
-import ru.example.wsruserfood.viewmodel.core.Event
-
 
 class SignInViewModel: BaseViewModel() {
     var isValid: Boolean = true

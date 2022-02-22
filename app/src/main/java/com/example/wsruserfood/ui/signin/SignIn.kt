@@ -8,8 +8,8 @@ import com.example.wsruserfood.R
 import com.example.wsruserfood.databinding.FragmentSignInBinding
 import com.example.wsruserfood.ui.core.BaseFragment
 import com.wajahatkarim3.easyvalidation.core.view_ktx.validator
-import ru.example.wsruserfood.viewmodel.core.Status
-import ru.example.wsruserfood.viewmodel.signin.SignInViewModel
+import com.example.wsruserfood.viewmodel.core.Status
+import com.example.wsruserfood.viewmodel.signin.SignInViewModel
 
 class SignIn : BaseFragment<SignInViewModel, FragmentSignInBinding>() {
 

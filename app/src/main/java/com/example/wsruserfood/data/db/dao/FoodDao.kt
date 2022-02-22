@@ -1,12 +1,12 @@
-package ru.example.wsruserfood.data.db.dao
+package com.example.wsruserfood.data.db.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 
-import ru.example.wsruserfood.data.db.entity.DishEntity
-import ru.example.wsruserfood.data.db.entity.VersionsEntity
+import com.example.wsruserfood.data.db.entity.DishEntity
+import com.example.wsruserfood.data.db.entity.VersionsEntity
 
 
 @Dao

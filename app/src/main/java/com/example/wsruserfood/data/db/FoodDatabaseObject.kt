@@ -1,8 +1,8 @@
-package ru.example.wsrfood.data.db
+package com.example.wsruserfood.data.db
 
 import android.content.Context
 import androidx.room.Room
-import ru.example.wsrfood.data.db.FoodDatabase
+import com.example.wsruserfood.data.db.FoodDatabase
 
 object FoodDatabaseObject {
 

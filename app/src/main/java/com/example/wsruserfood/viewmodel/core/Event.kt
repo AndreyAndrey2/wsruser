@@ -1,4 +1,4 @@
-package ru.example.wsruserfood.viewmodel.core
+package com.example.wsruserfood.viewmodel.core
 
 data class Event<out T>(val status: Status, val data: T? = null, val error: String? = null) {
 

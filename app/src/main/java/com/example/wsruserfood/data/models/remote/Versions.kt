@@ -1,6 +1,6 @@
-package ru.example.wsrfood.data.models.remote
+package com.example.wsruserfood.data.models.remote
 
-import ru.example.wsruserfood.data.db.entity.VersionsEntity
+import com.example.wsruserfood.data.db.entity.VersionsEntity
 
 data class Versions(
     val version: List<String>

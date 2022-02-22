@@ -1,4 +1,4 @@
-package ru.example.wsrfood.viewmodel.core
+package com.example.wsruserfood.viewmodel.core
 
 import android.content.Context
 import android.util.Log
@@ -10,14 +10,12 @@ import kotlinx.coroutines.launch
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import ru.example.wsrfood.data.db.FoodDatabaseObject
-import ru.example.wsrfood.data.models.remote.TokenResponse
-import ru.example.wsrfood.data.network.NetworkService
-import ru.example.wsrfood.data.network.api.FoodApi
-import ru.example.wsruserfood.data.db.dao.FoodDao
-//import ru.example.wsrfood.data.network.NetworkService
-//import ru.example.wsrfood.data.network.api.FoodApi
-import ru.example.wsruserfood.viewmodel.core.Event
+import com.example.wsruserfood.data.db.FoodDatabaseObject
+import com.example.wsruserfood.data.models.remote.TokenResponse
+import com.example.wsruserfood.data.network.NetworkService
+import com.example.wsruserfood.data.network.api.FoodApi
+import com.example.wsruserfood.data.db.dao.FoodDao
+import com.example.wsruserfood.viewmodel.core.Event
 
 open class BaseViewModel : ViewModel() {
 

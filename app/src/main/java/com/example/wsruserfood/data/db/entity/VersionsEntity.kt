@@ -1,4 +1,4 @@
-package ru.example.wsruserfood.data.db.entity
+package com.example.wsruserfood.data.db.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

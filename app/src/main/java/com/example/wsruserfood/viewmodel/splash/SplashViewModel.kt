@@ -1,13 +1,13 @@
 package com.example.wsruserfood.viewmodel.splash
 
 import androidx.lifecycle.viewModelScope
+import com.example.wsruserfood.data.models.remote.DishResponse
+import com.example.wsruserfood.data.models.remote.Versions
+import com.example.wsruserfood.viewmodel.core.BaseViewModel
+import com.example.wsruserfood.viewmodel.core.Event
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
-import ru.example.wsrfood.data.models.remote.DishResponse
-import ru.example.wsrfood.data.models.remote.Versions
-import ru.example.wsrfood.viewmodel.core.BaseViewModel
-import ru.example.wsruserfood.viewmodel.core.Event
 
 class SplashViewModel : BaseViewModel() {
 

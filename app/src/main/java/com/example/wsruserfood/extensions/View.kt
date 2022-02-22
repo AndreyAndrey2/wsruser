@@ -1,4 +1,4 @@
-package ru.example.wsrfood.extensions
+package com.example.wsruserfood.extensions
 
 import android.view.View
 

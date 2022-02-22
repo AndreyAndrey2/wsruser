@@ -1,4 +1,4 @@
-package ru.example.wsrfood.ui.splash
+package com.example.wsruserfood.ui.splash
 
 import android.os.Handler
 import android.os.Looper
@@ -9,11 +9,11 @@ import androidx.navigation.fragment.findNavController
 import com.example.wsruserfood.R
 import com.example.wsruserfood.databinding.FragmentSplashBinding
 import com.example.wsruserfood.ui.core.BaseFragment
+import com.example.wsruserfood.viewmodel.core.Status
 import com.example.wsruserfood.viewmodel.splash.SplashViewModel
-import ru.example.wsrfood.extensions.gone
-import ru.example.wsrfood.extensions.isOnline
-import ru.example.wsrfood.extensions.showToast
-import ru.example.wsruserfood.viewmodel.core.Status
+import com.example.wsruserfood.extensions.gone
+import com.example.wsruserfood.extensions.isOnline
+import com.example.wsruserfood.extensions.showToast
 
 
 
@@ -35,7 +35,7 @@ class SplashFragment : BaseFragment<SplashViewModel, FragmentSplashBinding>() {
 //        if (!requireContext().isOnline()) {
             binding.progressBar.gone()
             Handler(Looper.getMainLooper()).postDelayed({
-                findNavController().navigate(R.id.action_splashFragment_to_onBoardingFragmentContainer)
+                findNavController().navigate(R.id.action_splashFragment_to_mainFragment)
             }, 1000)
  //       }
 

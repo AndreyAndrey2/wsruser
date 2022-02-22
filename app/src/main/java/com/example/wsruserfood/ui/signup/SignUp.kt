@@ -8,9 +8,10 @@ import androidx.navigation.fragment.findNavController
 import com.example.wsruserfood.R
 import com.example.wsruserfood.databinding.FragmentSignUpBinding
 import com.example.wsruserfood.ui.core.BaseFragment
+import com.example.wsruserfood.viewmodel.core.Status
+import com.example.wsruserfood.viewmodel.signup.SignUpViewModel
 import com.wajahatkarim3.easyvalidation.core.view_ktx.validator
-import ru.example.wsrfood.viewmodel.signup.SignUpViewModel
-import ru.example.wsruserfood.viewmodel.core.Status
+
 
 class SignUp : BaseFragment<SignUpViewModel, FragmentSignUpBinding>() {
 

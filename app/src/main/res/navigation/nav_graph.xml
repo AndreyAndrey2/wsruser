@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="ru.example.wsrfood.ui.splash.SplashFragment"
+        android:name="com.example.wsruserfood.ui.splash.SplashFragment"
         android:label="SplashFragment"
         tools:layout="@layout/fragment_splash">
         <action
@@ -27,7 +27,7 @@
 
     <fragment
         android:id="@+id/onBoardingFragmentContainer"
-        android:name="ru.example.wsrfood.ui.onnoarding.OnBoardingFragmentContainer"
+        android:name="com.example.wsruserfood.ui.onboarding.OnBoardingFragmentContainer"
         android:label="OnBoardingFragmentContainer"
         tools:layout="@layout/fragment_on_boardind_container">
         <action
@@ -36,10 +36,13 @@
         <action
             android:id="@+id/action_onBoardingFragmentContainer_to_signUp"
             app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_onBoardingFragmentContainer_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/signIn"
-        android:name="ru.example.wsrfood.ui.signin.SignIn"
+        android:name="com.example.wsruserfood.ui.signin.SignIn"
         android:label="SignIn"
         tools:layout="@layout/fragment_sign_in">
         <action
@@ -48,7 +51,7 @@
     </fragment>
     <fragment
         android:id="@+id/signUp"
-        android:name="ru.example.wsrfood.ui.signup.SignUp"
+        android:name="com.example.wsruserfood.ui.signup.SignUp"
         android:label="SignUp"
         tools:layout="@layout/fragment_sign_up">
         <action
@@ -60,7 +63,22 @@
     </fragment>
     <fragment
         android:id="@+id/mainFragment"
-        android:name="ru.example.wsrfood.ui.main.MainFragment"
+        android:name="com.example.wsruserfood.ui.main.MainFragment"
         android:label="MainFragment"
         tools:layout="@layout/fragment_main"/>
+    <fragment
+        android:id="@+id/shopFragment"
+        android:name="com.example.wsruserfood.ui.shop.ShopFragment"
+        android:label="fragment_shop"
+        tools:layout="@layout/fragment_shop" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.wsruserfood.ui.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.wsruserfood.ui.user.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
 </navigation>

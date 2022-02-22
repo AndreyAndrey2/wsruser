@@ -1,12 +1,12 @@
-package ru.example.wsrfood.data.db
+package com.example.wsruserfood.data.db
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import ru.example.wsruserfood.data.db.dao.FoodDao
-import ru.example.wsruserfood.data.db.dao.TypesConverter
-import ru.example.wsruserfood.data.db.entity.DishEntity
-import ru.example.wsruserfood.data.db.entity.VersionsEntity
+import com.example.wsruserfood.data.db.dao.FoodDao
+import com.example.wsruserfood.data.db.dao.TypesConverter
+import com.example.wsruserfood.data.db.entity.DishEntity
+import com.example.wsruserfood.data.db.entity.VersionsEntity
 
 
 @Database(

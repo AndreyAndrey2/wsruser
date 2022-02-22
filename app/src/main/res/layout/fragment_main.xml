@@ -21,7 +21,7 @@
             android:textSize="18dp"
             android:fontFamily="@font/roboto"
             android:hint="Выберите адрес доставки"
-            android:layout_marginTop="36dp"
+            android:layout_marginTop="56dp"
             android:layout_marginStart="16dp"/>
 
     </FrameLayout>
@@ -33,7 +33,7 @@
         android:src="@drawable/ic_send"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="66dp"
         android:layout_marginEnd="84dp"/>
 
     <ImageView
@@ -43,8 +43,42 @@
         android:src="@drawable/ic_search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="66dp"
         android:layout_marginEnd="17dp"/>
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        style="@style/TabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ic_send"
+        app:tabGravity="center"
+        app:tabIndicator="@drawable/bg_tab_item_selected"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicatorColor="@color/crayola"
+        app:tabIndicatorGravity="stretch"
+        app:tabMode="fixed"
+        app:tabPaddingEnd="21dp"
+        app:tabPaddingStart="21dp"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/Text.TabLayout"
+        app:tabTextColor="@color/gray"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:saveEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/eat_1"

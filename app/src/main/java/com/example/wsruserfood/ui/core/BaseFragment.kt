@@ -12,10 +12,10 @@ import com.example.wsruserfood.ui.MainActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.collect
-import ru.example.wsrfood.extensions.gone
-import ru.example.wsrfood.extensions.visible
-import ru.example.wsrfood.viewmodel.core.BaseViewModel
-import ru.example.wsruserfood.viewmodel.core.Event
+import com.example.wsruserfood.extensions.gone
+import com.example.wsruserfood.extensions.visible
+import com.example.wsruserfood.viewmodel.core.BaseViewModel
+import com.example.wsruserfood.viewmodel.core.Event
 
 abstract class BaseFragment<T : BaseViewModel, VB : ViewBinding>
     : Fragment() {

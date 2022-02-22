@@ -1,7 +1,7 @@
-package ru.example.wsrfood.data.network
+package com.example.wsruserfood.data.network
 
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
-import ru.example.wsrfood.data.network.api.FoodApi
+import com.example.wsruserfood.data.network.api.FoodApi
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import okhttp3.OkHttpClient

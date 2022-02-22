@@ -1,6 +1,6 @@
-package ru.example.wsrfood.viewmodel.main
+package com.example.wsruserfood.viewmodel.main
 
-import ru.example.wsrfood.viewmodel.core.BaseViewModel
+import com.example.wsruserfood.viewmodel.core.BaseViewModel
 
 class MainViewModel: BaseViewModel() {
 }
