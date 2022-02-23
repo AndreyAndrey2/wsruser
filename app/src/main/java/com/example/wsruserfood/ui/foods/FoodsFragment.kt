@@ -4,6 +4,8 @@ import com.example.wsruserfood.databinding.FragmentFoodsBinding
 import android.view.LayoutInflater
 import com.example.wsruserfood.ui.core.BaseFragment
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import androidx.activity.addCallback
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
@@ -34,6 +36,12 @@ class FoodsFragment: BaseFragment<MainViewModel, FragmentFoodsBinding>() {
         }
         with(binding) {
             eat1.setOnClickListener{
+
+                val ProfsLeft: Animation = AnimationUtils.loadAnimation(activity, R.anim.aa)
+                eat1.startAnimation(ProfsLeft)
+                eat2.startAnimation(ProfsLeft)
+                eat3.startAnimation(ProfsLeft)
+                eat4.startAnimation(ProfsLeft)
                 eat1.gone()
                 eat2.gone()
                 eat3.gone()
@@ -45,7 +53,107 @@ class FoodsFragment: BaseFragment<MainViewModel, FragmentFoodsBinding>() {
                 eatBig.visible()
                 eat5.gone()
             }
+
+            eat2.setOnClickListener{
+
+                val ProfsLeft: Animation = AnimationUtils.loadAnimation(activity, R.anim.aa)
+                eat1.startAnimation(ProfsLeft)
+                eat2.startAnimation(ProfsLeft)
+                eat3.startAnimation(ProfsLeft)
+                eat4.startAnimation(ProfsLeft)
+                eat1.gone()
+                eat2.gone()
+                eat3.gone()
+                eat4.gone()
+                food1.gone()
+                food2.gone()
+                food3.gone()
+                food4.gone()
+                eatBig.visible()
+                eat5.gone()
+            }
+
+            eat3.setOnClickListener{
+
+                val ProfsLeft: Animation = AnimationUtils.loadAnimation(activity, R.anim.aa)
+                eat1.startAnimation(ProfsLeft)
+                eat2.startAnimation(ProfsLeft)
+                eat3.startAnimation(ProfsLeft)
+                eat4.startAnimation(ProfsLeft)
+                eat1.gone()
+                eat2.gone()
+                eat3.gone()
+                eat4.gone()
+                food1.gone()
+                food2.gone()
+                food3.gone()
+                food4.gone()
+                eatBig.visible()
+                eat5.gone()
+            }
+
+            eat4.setOnClickListener{
+
+                val ProfsLeft: Animation = AnimationUtils.loadAnimation(activity, R.anim.aa)
+                eat1.startAnimation(ProfsLeft)
+                eat2.startAnimation(ProfsLeft)
+                eat3.startAnimation(ProfsLeft)
+                eat4.startAnimation(ProfsLeft)
+                eat1.gone()
+                eat2.gone()
+                eat3.gone()
+                eat4.gone()
+                food1.gone()
+                food2.gone()
+                food3.gone()
+                food4.gone()
+                eatBig.visible()
+                eat5.gone()
+            }
+
+
+            eat55.setOnClickListener{
+
+                val ProfsLeft: Animation = AnimationUtils.loadAnimation(activity, R.anim.aa)
+                eat1.startAnimation(ProfsLeft)
+                eat2.startAnimation(ProfsLeft)
+                eat3.startAnimation(ProfsLeft)
+                eat4.startAnimation(ProfsLeft)
+                eat1.gone()
+                eat2.gone()
+                eat3.gone()
+                eat4.gone()
+                food1.gone()
+                food2.gone()
+                food3.gone()
+                food4.gone()
+                eatBig.visible()
+                eat5.gone()
+            }
+
+            eat66.setOnClickListener{
+
+                val ProfsLeft: Animation = AnimationUtils.loadAnimation(activity, R.anim.aa)
+                eat1.startAnimation(ProfsLeft)
+                eat2.startAnimation(ProfsLeft)
+                eat3.startAnimation(ProfsLeft)
+                eat4.startAnimation(ProfsLeft)
+                eat1.gone()
+                eat2.gone()
+                eat3.gone()
+                eat4.gone()
+                food1.gone()
+                food2.gone()
+                food3.gone()
+                food4.gone()
+                eatBig.visible()
+                eat5.gone()
+            }
+
+
             btnBack.setOnClickListener{
+                val ProfsRigth: Animation = AnimationUtils.loadAnimation(activity, R.anim.sa)
+                eatBig.startAnimation(ProfsRigth)
                 eat1.visible()
                 eat2.visible()
                 eat3.visible()
@@ -117,6 +225,7 @@ class FoodsFragment: BaseFragment<MainViewModel, FragmentFoodsBinding>() {
             minus.setOnClickListener{
                 count.text = (count.text.toString().toInt() - 1).toString()
             }
+
         }
     }
 }

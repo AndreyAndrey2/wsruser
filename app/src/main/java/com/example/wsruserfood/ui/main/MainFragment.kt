@@ -72,6 +72,7 @@ class MainFragment: BaseFragment<MainViewModel, FragmentMainBinding>() {
                 tabLayout.visible()
                 tvResults.gone()
                 editText.hint = "Выберите адрес доставки"
+                editText.setText("")
             }
         }
     }
