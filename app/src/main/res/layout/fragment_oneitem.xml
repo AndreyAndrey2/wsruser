@@ -7,6 +7,23 @@
     tools:context=".ui.foods.OneitemFragment">
 
 
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/pager"
+        android:layout_width="389dp"
+        android:layout_height="389dp"
+        android:layout_gravity="center_horizontal"
+        android:saveEnabled="false"/>
+
+    <ru.tinkoff.scrollingpagerindicator.ScrollingPagerIndicator
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/indicator"
+        android:layout_gravity="top|center_horizontal"
+        app:spi_dotSize="10dp"
+        app:spi_dotSelectedColor="@color/red"
+        app:spi_dotColor="@color/color_indicator_img"
+        android:layout_marginTop="360dp"/>
+
     <ImageView
         android:id="@+id/back_big"
         android:layout_width="wrap_content"
@@ -14,14 +31,6 @@
         android:layout_marginTop="35dp"
         android:layout_marginStart="20dp"
         android:src="@drawable/back" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
-        android:layout_marginTop="70dp"
-        android:layout_gravity="center_horizontal"
-        android:src="@drawable/eat_1" />
 
     <TextView
         android:id="@+id/tv_main"

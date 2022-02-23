@@ -8,6 +8,9 @@ import android.view.View
 import com.example.wsruserfood.databinding.FragmentMainBinding
 import com.example.wsruserfood.ui.core.BaseFragment
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
+import android.widget.ImageView
 import androidx.activity.addCallback
 import androidx.core.view.isInvisible
 import androidx.fragment.app.viewModels
@@ -36,19 +39,30 @@ class MainFragment: BaseFragment<MainViewModel, FragmentMainBinding>() {
         FragmentMainBinding.inflate(inflater, container, false)
 
     override fun setupViews() {
-        binding.tvResults.gone()
+        binding.tvResults.invisible()
         binding.backWhite.gone()
         binding.close.gone()
+        binding.add2.invisible()
         mainActivity.showBottomMenu()
         requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner) {
             requireActivity().finish()
         }
         with(binding){
 
+            add.setOnClickListener {
+                val ProfsLeft: Animation = AnimationUtils.loadAnimation(activity, R.anim.sk)
+                add2.startAnimation(ProfsLeft)
+                add.visible()
+                add.gone()
+                Thread.sleep(500)
+                add2.gone()
+            }
+
             icSearch.setOnClickListener{
                 backWhite.visible()
                 close.visible()
                 icSend.invisible()
+                editText.hint = "Search"
             }
 
             close.setOnClickListener{
@@ -57,6 +71,7 @@ class MainFragment: BaseFragment<MainViewModel, FragmentMainBinding>() {
                 icSend.visible()
                 tabLayout.visible()
                 tvResults.gone()
+                editText.hint = "Выберите адрес доставки"
             }
         }
     }
@@ -73,6 +88,7 @@ class MainFragment: BaseFragment<MainViewModel, FragmentMainBinding>() {
                     binding.tvResults.visible()
                     binding.close.visible()
                     binding.icSend.invisible()
+                    binding.tvResults.text = "Results"
                 }
                 return@OnKeyListener true
             }
@@ -107,5 +123,4 @@ class MainFragment: BaseFragment<MainViewModel, FragmentMainBinding>() {
 
         }
     }
-
 }
